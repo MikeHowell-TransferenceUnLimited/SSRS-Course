@@ -54,7 +54,7 @@ ORDER BY LastName, FirstName</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Contacts</Value>
+                    <Value>=Parameters!Title.Value</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -66,7 +66,7 @@ ORDER BY LastName, FirstName</CommandText>
               </Paragraph>
             </Paragraphs>
             <Height>0.42in</Height>
-            <Width>5in</Width>
+            <Width>3.39167in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -439,25 +439,28 @@ ORDER BY LastName, FirstName</CommandText>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
-          <Textbox Name="LastName1">
+          <Textbox Name="Textbox1">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!LastName.Value, "DataSet1")</Value>
-                    <Style />
+                    <Label>Today's Date</Label>
+                    <Value>=Now()</Value>
+                    <Style>
+                      <Format>dd-MMM-yyyy</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>LastName1</rd:DefaultName>
-            <Top>1.11333in</Top>
-            <Left>0.48in</Left>
-            <Height>0.25in</Height>
-            <Width>1in</Width>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.11333in</Top>
+            <Left>3.51333in</Left>
+            <Height>0.25111in</Height>
+            <Width>1.475in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -483,10 +486,23 @@ ORDER BY LastName, FirstName</CommandText>
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Title">
+      <DataType>String</DataType>
+      <Prompt>The title:</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Title</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>

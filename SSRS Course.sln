@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report Wizard", "Report Wizard\Report Wizard.rptproj", "{A5474EC2-6840-47CE-8EEC-9A2FF4805F76}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SSRS Course Demonstrations", "SSRS Course Demonstrations\SSRS Course Demonstrations.rptproj", "{3BE73122-DF96-4917-819C-F7ABA01B885E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -20,6 +22,14 @@ Global
 		{A5474EC2-6840-47CE-8EEC-9A2FF4805F76}.Release|Default.ActiveCfg = Release
 		{A5474EC2-6840-47CE-8EEC-9A2FF4805F76}.Release|Default.Build.0 = Release
 		{A5474EC2-6840-47CE-8EEC-9A2FF4805F76}.Release|Default.Deploy.0 = Release
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Debug|Default.ActiveCfg = Debug
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Debug|Default.Build.0 = Debug
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Debug|Default.Deploy.0 = Debug
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.DebugLocal|Default.Build.0 = DebugLocal
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Release|Default.ActiveCfg = Release
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Release|Default.Build.0 = Release
+		{3BE73122-DF96-4917-819C-F7ABA01B885E}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
